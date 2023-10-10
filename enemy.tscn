@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5y4i0b2h3onh"]
+
+[ext_resource type="Texture2D" uid="uid://bfpki4nvlnwof" path="res://Assets/Traps/Spike Head/Idle.png" id="1_qg6ar"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_23i10"]
+size = Vector2(65, 68)
+
+[node name="Enemy" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.63462)
+texture = ExtResource("1_qg6ar")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, 2)
+shape = SubResource("RectangleShape2D_23i10")
